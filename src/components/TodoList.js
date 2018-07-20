@@ -1,10 +1,11 @@
 import React from 'react';
+import style from './css/TodoList.css';
 
 const TodoList = props => {
-  const liElem = props.todoItemsArray.map( item => <li key={item.id}>{item.text}</li> )
+  const liElem = props.todoItemsArray.map( item => <li className={style.TodoItem} key={item.id}>{item.text}</li> )
 
   return (
-    <ul>{liElem}</ul>
+    <ul className={style.TodoList}>{liElem}</ul>
   )
 }
 

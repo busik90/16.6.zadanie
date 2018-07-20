@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/css-loader/index.js?!./src/components/css/TodoList.css":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--5-1!./src/components/css/TodoList.css ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"._3UiEh6jW2zCihlgPnrHzfs {\\r\\n  padding: 10px 15px;\\r\\n  font-size: 24px;\\r\\n  list-style: inside;\\r\\n  border: 2px solid;\\r\\n}\", \"\"]);\n\n// exports\nexports.locals = {\n\t\"TodoList\": \"_3UiEh6jW2zCihlgPnrHzfs\"\n};\n\n//# sourceURL=webpack:///./src/components/css/TodoList.css?./node_modules/css-loader??ref--5-1");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./src/containers/App.css":
 /*!********************************************************************!*\
   !*** ./node_modules/css-loader??ref--5-1!./src/containers/App.css ***!
@@ -464,7 +475,18 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar TodoList = function TodoList(props) {\n  var liElem = props.todoItemsArray.map(function (item) {\n    return _react2.default.createElement(\n      'li',\n      { key: item.id },\n      item.text\n    );\n  });\n\n  return _react2.default.createElement(\n    'ul',\n    null,\n    liElem\n  );\n};\n\nexports.default = TodoList;\n\n//# sourceURL=webpack:///./src/components/TodoList.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _TodoList = __webpack_require__(/*! ./css/TodoList.css */ \"./src/components/css/TodoList.css\");\n\nvar _TodoList2 = _interopRequireDefault(_TodoList);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar TodoList = function TodoList(props) {\n  var liElem = props.todoItemsArray.map(function (item) {\n    return _react2.default.createElement(\n      'li',\n      { key: item.id },\n      item.text\n    );\n  });\n\n  return _react2.default.createElement(\n    'ul',\n    { className: _TodoList2.default.TodoList },\n    liElem\n  );\n};\n\nexports.default = TodoList;\n\n//# sourceURL=webpack:///./src/components/TodoList.js?");
+
+/***/ }),
+
+/***/ "./src/components/css/TodoList.css":
+/*!*****************************************!*\
+  !*** ./src/components/css/TodoList.css ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--5-1!./TodoList.css */ \"./node_modules/css-loader/index.js?!./src/components/css/TodoList.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/css/TodoList.css?");
 
 /***/ }),
 
